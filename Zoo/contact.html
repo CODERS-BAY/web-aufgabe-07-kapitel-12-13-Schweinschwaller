@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zoo und seine Bewohner</title>
+    <meta charset="utf-8" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navtop">
+            <ul>
+                <li><a href="index.html">Willkommen</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="contact.html" class="aktuell">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <h1 id="h1header">
+            Zoo und seine Bewohner
+        </h1>
+    </header>
+
+    <main class="contactMain">
+        <article class="contact">
+            <section>
+                <div class="question">
+                    <form>
+                        <div>
+                            <label for="uname">Name</label>
+                            <i class="fas fa-fist-raised"></i>
+                            <input required type="text" id="name" name="username">
+                        </div>
+                        <div>
+                            <label for="email">E-Mail</label>
+                            <input required type="email" id="email" name="email">
+                        </div>
+                        <div>
+                            <label for="date">Besuchstag</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div>
+                            <label for="date">Besuchszeit</label>
+                            <input type="time" id="time" name="time">
+                        </div>
+                        <div>
+                            <label for="happy">Hat es gefallen: </label>
+                            <p id="happysign" style="display:inline">😀</p>
+                            <input type="range" id="happy" name="happy" min="0" max="100" value="60" onchange="smile()">
+
+                            <p>Weiterempfehlung:
+                                <input type="radio" id="recomyes" name="recom" value="yes" checked>
+                                <label for="recomyes" class="radiolabel">Ja</label>
+
+                                <input type="radio" id="recomno" name="recom" value="no">
+                                <label for="recomno" class="radiolabel">Nein</label>
+                            </p>
+                        </div>
+                        <div>
+                            <label for="bestanimal">Welche Tierart hat am besten gefallen</label>
+                            <select id="bestanimal" name="bestanimal">
+                                <option value="tiger">Tiger</option>
+                                <option value="eagle">Adler</option>
+                                <option value="mantis">Gottesanbeterin</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="comment">Kommentar</label>
+                            <textarea id="comment" name="comment" style="height:200px"></textarea>
+                        </div>
+
+                        <label for="visitorinfo">Besucherinfo</label>
+                        <select id="visitorinfo" name="visitorinfo">
+                            <option value="1">Familienausflug</option>
+                            <option value="2">Allein unterwegs</option>
+                            <option value="3">Gruppenausflug</option>
+                            <option value="4">Ausflug mit Freunden</option>
+                            <option value="5">was anderes</option>
+                        </select>
+                        <br>
+
+                        <input id="contactsubmit" type="submit" value="Submit">
+
+                    </form>
+                </div>
+            </section>
+        </article>
+
+    </main>
+
+    <script>
+        function smile() {
+
+            let str = "";
+
+            if (document.getElementById("happy").value >= 95) {
+                str = "😁";
+            } else if (document.getElementById("happy").value >= 75) {
+                str = "😃";
+            } else if (document.getElementById("happy").value >= 60) {
+                str = "😀";
+            } else if (document.getElementById("happy").value >= 45) {
+                str = "😐";
+            } else if (document.getElementById("happy").value >= 30) {
+                str = "😞";
+            } else if (document.getElementById("happy").value >= 10) {
+                str = "😒";
+            } else {
+                str = "😡";
+            }
+
+            document.getElementById("happysign").innerText = str;
+
+        }
+    </script>
+
+    <footer>
+        <h3>made by Georg</h3>
+    </footer>
+
+</body>

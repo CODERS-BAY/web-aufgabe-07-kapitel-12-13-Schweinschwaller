@@ -1,0 +1,387 @@
+/*  Farbpalette
+    https://flatuicolors.com/palette/de
+*/
+
+
+html {
+    box-sizing: border-box;
+  }
+
+body{
+    font-size: 120%;
+}
+
+/* #region header */
+header{
+    background-image: url(https://image.kurier.at/images/cfs_landscape_616w_347h/4515005/46-166174659.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+
+header nav{
+    background-color: rgb(10, 10, 10);
+    color: rgb(240, 240, 240);
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+header li {
+    float: left;
+  }
+
+header li a {
+    display: block;
+    text-align: center;
+    padding: 1.2rem;
+    text-decoration: none;
+    color:rgb(240, 240, 240);
+  }
+
+header h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 290%;
+    text-shadow: 0.1rem 0.1rem #3867d6;
+}
+
+header h1::first-letter{
+    font-family: 'Lobster', cursive;
+    font-size: 200%;
+    color: #3867d6;
+}
+
+header h1::after
+{
+    /*content: "🐻";*/
+    content: url(../bear.png) ;
+    display: inline-flex;
+    width: 7rem;
+    height: 7rem;
+}
+
+nav a:first-child{
+    margin-left: 5%;
+}
+
+.aktuell{
+    font-weight: bold;
+}
+/* #endregion header */
+
+/* #region main */
+main{
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.indexSite{
+    background-color: rgba(245, 211, 48, 0.1); /*rgb (245, 211, 48)== #fed330 */
+}
+
+/* #endregion main*/
+
+/* #region footer */
+footer{
+    margin-top: 3em;
+    padding: 1em;
+
+    background-color: rgb(10, 10, 10);
+    color: rgb(240, 240, 240);
+    display: flex;
+
+    font-weight: normal;
+    font-size: 70%;
+    font-style: italic;
+}
+
+footer h1{
+    font-size: 120%;
+}
+/* #endregion footer */
+
+/* #region index/Welcome */
+
+.welcome{
+    width: 49%;  
+}
+.welcome h1
+{
+    text-align: center;
+    text-shadow: 0rem -0.05rem #4b6584;
+}
+.welcome h1::first-letter{
+    font-family: 'Lobster', cursive;
+    font-size: 200%;
+    color: #fc5c65;
+}
+
+.welcome img,
+.welcome iframe{
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+.welcome p{
+    width: 90%;  
+    text-align: center;
+}
+
+.welcome section p::first-letter{
+    color: #8854d0;
+    font-size: 200%;
+}
+
+.link{
+    color: #eb3b5a;
+    font-size: 120%;
+    margin-left: 10%;
+    font-family: 'Ranchers', cursive;
+    text-shadow: 0.01rem 0.01rem #20bf6b;
+    text-decoration: none;
+}
+
+.link:hover{
+    text-decoration: underline;
+    transition: font-size 2s;
+    font-size: 200%;
+}
+.linkdiv{
+  transform: rotate(5deg);
+}
+
+.unordertList{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    list-style-image: url(../ul_img.png);
+}
+
+.deflist{
+    width: 49%;
+}
+
+.deflist section:first-child
+{
+    margin-bottom: 10%;
+}
+
+.deflist h1::first-letter{
+    font-family: 'Lobster', cursive;
+    font-size: 200%;
+    color: #fa8231;
+}
+
+.txtImg{
+    background-image: url(https://www.fotomagazin.de/sites/www.fotomagazin.de/files/styles/landing_lead/public/fm/2019/aufmacher_fotowettbewerb_haida_landschaft.jpg?itok=YfB90dz9&timestamp=1562245157);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color: #d1d8e0;
+    font-size: 120%;
+    padding: 1rem;
+}
+
+.txtImg p{
+    padding: 1rem;
+    border: 0.15rem solid black;
+    border-radius: 25px;
+    color: black;
+}
+
+.txtImg p::first-letter{
+    color: #eb3b5a;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.txtBackground{
+    background-color: #d1d8e0;
+    opacity: 0.6;
+    box-shadow: 5px 10px #333333;
+}
+
+/* #endregion index*/
+
+/* #region info */
+.info{
+    width: 98%;
+}
+
+.infotable {
+    display: inherit;
+}
+.infotablesmall{
+    display: none;
+}
+
+.infotable {
+    width: 100%;
+    height: 200%;
+    border: 0.15rem solid rgb(10, 10, 10);
+    border-collapse: collapse;
+    text-align: left;
+}
+.infotable td, 
+.infotable th {
+    border: 0.1rem solid rgb(10, 10, 10);
+    padding: 0.4rem 0.3rem;
+}
+.infotable tbody td {
+    padding-left: 1rem;
+}
+.infotable thead {
+    background: #CFCFCF;
+    border-bottom: 0.15rem solid rgb(10, 10, 10);
+}
+.infotable thead th {
+    font-weight: bold;
+    font-size: 120%;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.infotable tr:nth-child(even){
+    background: #f2f2f2;
+}
+
+.infotable tr td:nth-child(2),
+.infotable tr td:nth-child(5)
+{
+    text-align: center;
+    padding: 0%;
+}
+/* #endregion info */
+
+/* #region contact */
+.contact{
+    width: 95%;
+    font-family: 'Ranchers', cursive;
+}
+
+.question{
+    width: 95%;
+    border-radius: 0.5rem;
+    background-color: #d1d8e0;
+    padding: 1.2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.question input,
+.question select,
+.question textarea {
+    width: 94%;
+    padding: 1rem;
+    border: 0.15rem solid #45aaf2;
+    border-radius: 0.15rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    resize: vertical;
+}
+
+.question input[type="radio"],
+.question input[type="range"],
+#happysign
+{
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+}
+
+#contactsubmit {
+    background-color: #45aaf2;
+    color: rgb(10, 10, 10);
+    padding: 1rem 1.2rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    width: 8rem;
+    font-size: 100%;
+}
+
+#contactsubmit:hover{
+    background-color: gray;
+}
+
+#recomno,
+#recomyes{
+    width: 1.2rem;
+}
+/* #endregion contact */
+
+/* #region MOBILE */
+@media only screen and (max-width: 700px){
+    /* #region main */
+    main{
+        display: block;
+        max-width: 99%;
+    }
+    /* #endregion main*/
+
+    /* #region index*/
+    iframe{
+        width: 95%;
+        height: auto;
+    }
+
+    .welcome,
+    .deflist{
+        width: 95%;  
+    }
+    
+    .deftable tbody td {
+        padding-left: 1rem;
+        font-size: 100%;
+    }
+    /* #endregion index*/
+    
+    /* #region info*/
+    .infotxt{
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 0;
+        width: 98%;
+        text-align: left;
+    }
+    .infotable {
+        display: none;
+    }
+    .infotablesmall{
+        display: inherit;
+        width: 100%;
+        border: 0.15rem solid rgb(10, 10, 10);
+        border-collapse: collapse;
+        text-align: left;
+    }
+
+    .infotablesmall td, 
+    .infotablesmall th {
+        border: 0.1rem solid rgb(10, 10, 10);
+        padding: 0.2rem 0.2rem;
+        padding-left: 1rem;
+    }
+    .infotablesmall th{
+        background-color: lightgray;
+    }
+    /* #endregion info*/  
+
+    /* #region contact*/
+    header h1::after{
+        width: 3rem;
+        height: 3rem;
+    }
+    /* #endregion contact*/
+    
+}
+/* #endregion MOBILE */
